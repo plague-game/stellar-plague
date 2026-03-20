@@ -178,5 +178,5 @@ MIT — see [LICENSE](./LICENSE)
 
 ## 💬 Community
 
-- Telegram: [@pope_h](https://t.me/pope_h)
+- Telegram: [@CrypticNerd](https://t.me/CrypticNerd)
 - GitHub Discussions: [Discussions tab](../../discussions)
