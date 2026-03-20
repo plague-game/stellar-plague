@@ -25,3 +25,5 @@ Thumbs.db
 *.swp
 
 docs/ISSUES.md
+.github/ISSUE_TEMPLATE/old-ci.yml
+
