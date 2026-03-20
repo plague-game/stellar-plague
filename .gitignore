@@ -1,0 +1,27 @@
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local
+.env.production
+
+# Soroban
+target/
+*.wasm
+
+# ZK keys (never commit trusted setup keys)
+zk/keys/*.zkey
+zk/keys/*.ptau
+zk/proofs/*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+docs/ISSUES.md
