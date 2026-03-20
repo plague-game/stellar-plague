@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Bebas Neue', serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f5f0e8;
+    color: #0a0a0a;
+    min-height: 100vh;
+  }
+
+  /* Neobrutalist scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f0e8;
+    border-left: 2px solid #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0a0a0a;
+  }
+}
+
+@layer components {
+  /* Neobrutalist button base */
+  .btn-brutal {
+    @apply border-3 border-plague-black shadow-brutal font-mono font-bold uppercase tracking-wider
+           transition-all duration-100 cursor-pointer select-none;
+  }
+
+  .btn-brutal:hover {
+    @apply translate-x-[2px] translate-y-[2px] shadow-none;
+  }
+
+  .btn-brutal:active {
+    @apply translate-x-[4px] translate-y-[4px] shadow-none;
+  }
+
+  /* Card neobrutalist */
+  .card-brutal {
+    @apply border-3 border-plague-black shadow-brutal bg-plague-white;
+  }
+
+  /* Input neobrutalist */
+  .input-brutal {
+    @apply border-3 border-plague-black bg-plague-white font-mono px-4 py-2
+           focus:outline-none focus:shadow-brutal-red transition-shadow;
+  }
+
+  /* Player token */
+  .player-token {
+    @apply w-12 h-12 border-3 border-plague-black shadow-brutal flex items-center
+           justify-content-center font-display text-xl transition-all duration-300;
+  }
+
+  .player-token.infected {
+    @apply bg-plague-red text-plague-white animate-pulse-red;
+  }
+
+  .player-token.clean {
+    @apply bg-plague-yellow text-plague-black;
+  }
+
+  .player-token.eliminated {
+    @apply bg-gray-300 text-gray-500 opacity-50;
+  }
+}
